@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="pers.gargantua.tech.mapper.Mapper">
+    <insert id="addMember" parameterType="pers.gargantua.tech.po.Member">
+        INSERT INTO member(
+            studentId,
+            name,
+            sex,
+            local,
+            collage,
+            major,
+            phone,
+            purpose
+        )
+        VALUES (
+            #{studentId},
+            #{name},
+            #{sex},
+            #{local},
+            #{collage},
+            #{major},
+            #{phone},
+            #{purpose}
+        )
+    </insert>
+    <insert id="addOfficer" parameterType="pers.gargantua.tech.po.Officer">
+        INSERT INTO officer(
+            studentId,
+            name,
+            sex,
+            local,
+            collage,
+            major,
+            phone,
+            hobby,
+            firstIntent,
+            secondIntent,
+            thirdIntent,
+            selfIntroduction
+        )
+        VALUES (
+            #{studentId},
+            #{name},
+            #{sex},
+            #{local},
+            #{collage},
+            #{major},
+            #{phone},
+            #{hobby},
+            #{firstIntent},
+            #{secondIntent},
+            #{thirdIntent},
+            #{selfIntroduction}
+        )
+    </insert>
+    <select id="findMemberByStudentId" parameterType="String" resultType="pers.gargantua.tech.po.Member">
+        SELECT *
+        FROM member
+        WHERE studentId = #{studentId}
+    </select>
+    <select id="findOfficerByStudentId" parameterType="String" resultType="pers.gargantua.tech.po.Officer">
+        SELECT *
+        FROM officer
+        WHERE studentId = #{studentId}
+    </select>
+    <insert id="addLecture" parameterType="pers.gargantua.tech.po.Lecture">
+        INSERT INTO lecture(
+            studentId,
+            name,
+            sex,
+            local,
+            collage,
+            major,
+            phone
+        )
+        VALUES (
+            #{studentId},
+            #{name},
+            #{sex},
+            #{local},
+            #{collage},
+            #{major},
+            #{phone}
+        )
+    </insert>
+</mapper>

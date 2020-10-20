@@ -1,0 +1,69 @@
+body {
+    padding-top: 50px;                     /* 相对定位必须设置，不然会出问题 */
+    position: relative;
+}
+h2, h3, h4 {
+    text-align: center;
+}
+.nav {
+                                           /*导航条左右移动*/
+    margin-right: 10%;
+    margin-left: 13%;
+}
+
+/*.row{
+    background-color: #3299CC
+}*/
+.block {
+	margin: 0;
+    width: 100%;
+    height: 600px;
+    /*background-color: #856363;*/
+    color: #ffffff;
+}
+.table {
+    width: 100%;
+    height: 600px;
+    /*background-color: #3299CC;*/
+}
+.media-object{
+	text-align: center;
+}
+.media-body{
+	text-align: center;         /*水平居中*/
+}
+.row{
+	width: 1200px;
+    height: 600px;
+
+}
+.two1{
+    width: 100%;
+    height: 100px;
+}
+.two1{
+    width: 100%;
+    height: 500px;
+}
+.center {
+    width: 100%;height: 600px;
+    display: -webkit-box;-webkit-box-orient: horizontal;-webkit-box-pack: center;-webkit-box-align: center;
+    /*display: -moz-box;-moz-box-orient: horizontal;-moz-box-pack: center;-moz-box-align: center;*/
+    /*display: -o-box;-o-box-orient: horizontal;-o-box-pack: center;-o-box-align: center;*/
+    /*display: -ms-box;-ms-box-orient: horizontal;-ms-box-pack: center;-ms-box-align: center;*/
+    /*display: box;box-orient: horizontal;box-pack: center;box-align: center;*/
+}
+.eight{
+    line-height: 600px;
+    text-align: center;
+}
+.item{
+    margin: 2%;
+    text-align: center;
+}
+/*.img1{
+    padding-right: 10px;
+    background-color: green;
+    height: 250px;
+    width: 250px;
+}*/
