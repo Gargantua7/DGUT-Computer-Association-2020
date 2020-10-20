@@ -115,7 +115,8 @@
 </nav>
 <img class="img" src="${pageContext.request.contextPath}/img/4.png">
 <h3 style="margin: 10% 20% 0 20%; text-align: center; color: white">路由器知识讲座<br/>报名信息填写</h3>
-<p style="text-align: center; color: white">仅限2020级报名</p>
+<p style="text-align: center; color: white; margin: 2px">仅限2020级报名</p>
+<p style="text-align: center; color: white; margin: 2px">限120名报名人数</p>
 <form action="${pageContext.request.contextPath}/member/lecture/submit/" method="post" onsubmit="return submitCheck()">
     <label style="width: 100%;">
         <input style="display: none"/><br/>

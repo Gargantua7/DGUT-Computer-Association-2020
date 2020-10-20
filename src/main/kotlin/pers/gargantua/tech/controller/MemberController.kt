@@ -71,6 +71,13 @@ class MemberController {
             addObject("msg", "信息有误，请重新输入")
             addObject("person", lecture)
         }
+        val count = ClassPathXmlApplicationContext(
+            "pers/gargantua/tech/ApplicationContext.xml"
+        ).getBean(MyService::class.java).lectureCount()
+        if(count > 120) return modelAndView.apply {
+            addObject("msg", "人数已满")
+            addObject("person", lecture)
+        }
         try {
             ClassPathXmlApplicationContext(
                 "pers/gargantua/tech/ApplicationContext.xml"
@@ -81,6 +88,6 @@ class MemberController {
                 addObject("person", lecture)
             }
         }
-        return modelAndView.apply { addObject("msg", "提交成功") }
+        return modelAndView.apply { addObject("msg", "报名成功") }
     }
 }

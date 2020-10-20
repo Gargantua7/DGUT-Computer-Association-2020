@@ -8,4 +8,5 @@ import pers.gargantua.tech.po.Person
 interface MyService {
     fun add(person: Person)
     fun findPersonByStudentId(studentId: String, findObj: Int): Person?
+    fun lectureCount(): Int
 }

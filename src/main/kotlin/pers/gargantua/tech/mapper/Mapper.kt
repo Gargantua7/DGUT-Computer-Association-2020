@@ -14,4 +14,5 @@ interface Mapper {
     fun findMemberByStudentId(studentId: String): Person
     fun findOfficerByStudentId(studentId: String): Person
     fun addLecture(lecture: Lecture)
+    fun lectureCount(): Int
 }

@@ -34,4 +34,6 @@ open class ServiceImpl : MyService {
             else -> null
         }
     }
+
+    override fun lectureCount(): Int = mapper.lectureCount() + 1
 }

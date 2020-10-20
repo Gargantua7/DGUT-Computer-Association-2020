@@ -84,4 +84,7 @@
             #{phone}
         )
     </insert>
+    <select id="lectureCount" resultType="Integer">
+        SELECT COUNT(*) FROM lecture
+    </select>
 </mapper>
