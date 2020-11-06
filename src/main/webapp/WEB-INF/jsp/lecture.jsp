@@ -35,6 +35,8 @@
         })
 
         function submitCheck() {
+            alert("报名已结束");
+            return false;
             let id = $("#id").val();
             if(!(/^2020\d{8}$/.test(id))) {
                 alert("学号不合法，请重新输入");
@@ -105,7 +107,6 @@
             <ul class="nav navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/#1">技术部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#2">宣传部</a></li>
-                <li><a href="${pageContext.request.contextPath}/#3">电竞部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#4">策划部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#5">网技部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#6">协会定位</a></li>
@@ -116,7 +117,7 @@
 <img class="img" src="${pageContext.request.contextPath}/img/4.png">
 <h3 style="margin: 10% 20% 0 20%; text-align: center; color: white">路由器知识讲座<br/>报名信息填写</h3>
 <p style="text-align: center; color: white; margin: 2px">仅限2020级报名</p>
-<p style="text-align: center; color: white; margin: 2px">限120名报名人数</p>
+<p style="text-align: center; color: red; margin: 2px; font-size: 24px; font-weight: bolder">报名已结束</p>
 <form action="${pageContext.request.contextPath}/member/lecture/submit/" method="post" onsubmit="return submitCheck()">
     <label style="width: 100%;">
         <input style="display: none"/><br/>

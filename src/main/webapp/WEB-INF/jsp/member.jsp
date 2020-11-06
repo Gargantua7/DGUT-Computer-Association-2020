@@ -55,6 +55,10 @@
                 alert("请填写完整信息")
                 return false;
             }
+            if($("#purpose").val().replace(/(^\s*)|(\s*$)/g, "") === "") {
+                alert("想在计协学到什么不能为空！")
+                return false;
+            }
             return true;
         }
 
@@ -98,14 +102,13 @@
             </button>
             <a class="navbar-brand" href="${pageContext.request.contextPath}/">
                 <img alt="计协logo" height="20px" src="${pageContext.request.contextPath}/img/jixielogo.jpg"
-                                                  width="20px"></a>
+                     width="20px"></a>
             <a class="btn btn-default navbar-btn" href="${pageContext.request.contextPath}/sign/signIn/" style="visibility:hidden">报名</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/#1">技术部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#2">宣传部</a></li>
-                <li><a href="${pageContext.request.contextPath}/#3">电竞部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#4">策划部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#5">网技部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#6">协会定位</a></li>
@@ -137,8 +140,8 @@
             <option value="" disabled selected hidden>专业 *</option>
         </select>
         <input id="phone" name="phone" placeholder="手机 *" type="number" value="${person.phone}"/><br/>
-        <textarea name="purpose" placeholder="希望在计协学到什么？"
-            style="resize: none; height: 100px">${person.purpose}</textarea><br/>
+        <textarea id="purpose" name="purpose" placeholder="希望在计协学到什么？ *"
+                  style="resize: none; height: 100px">${person.purpose}</textarea><br/>
         <span style="color: white">报名后请留意后续短信通知</span>
         <input class="b" type="submit"/>
     </label>

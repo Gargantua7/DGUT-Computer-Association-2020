@@ -31,7 +31,6 @@
             <ul class="nav navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/#1">技术部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#2">宣传部</a></li>
-                <li><a href="${pageContext.request.contextPath}/#3">电竞部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#4">策划部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#5">网技部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#6">协会定位</a></li>
@@ -50,8 +49,8 @@
 <div style="margin: 100px 20%; width: 60%; color: rgb(255, 255, 255)">
     <a href="${pageContext.request.contextPath}/sign/signUp/" class="b">干事报名资料查询打印</a>
 </div>
-<div style="margin: 100px 20%; width: 60%; color: rgb(255, 255, 255); display: none">
-    <a href="${pageContext.request.contextPath}/member/lecture/" class="b">干事报名资料查询打印</a>
+<div style="margin: 100px 20%; width: 60%; color: rgb(255, 255, 255)">
+    <a href="${pageContext.request.contextPath}/member/lecture/" class="b">讲座报名</a>
 </div>
 </body>
 </html>

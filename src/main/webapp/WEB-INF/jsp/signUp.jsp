@@ -23,11 +23,6 @@
                 alert("学号不合法，请重新输入");
                 return false;
             }
-            let phone = $("#phone").val();
-            if (!(/^1[3456789]\d{9}$/.test(phone))) {
-                alert("手机号码不合法，请重新输入");
-                return false;
-            }
             return true;
         }
     </script>
@@ -54,7 +49,6 @@
             <ul class="nav navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/#1">技术部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#2">宣传部</a></li>
-                <li><a href="${pageContext.request.contextPath}/#3">电竞部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#4">策划部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#5">网技部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#6">协会定位</a></li>

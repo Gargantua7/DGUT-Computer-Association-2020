@@ -35,6 +35,8 @@
         })
 
         function submitCheck() {
+            alert("报名已结束");
+            return false;
             let id = $("#id").val();
             if (!(/^20[12][0789]\d{8}$/.test(id))) {
                 alert("学号不合法，请重新输入");
@@ -109,7 +111,6 @@
             <ul class="nav navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/#1">技术部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#2">宣传部</a></li>
-                <li><a href="${pageContext.request.contextPath}/#3">电竞部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#4">策划部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#5">网技部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#6">协会定位</a></li>
@@ -119,6 +120,7 @@
 </nav>
 <img class="img" src="${pageContext.request.contextPath}/img/4.png">
 <h3 style="margin: 10% 20% 0 20%; text-align: center; color: white">干事报名信息填写</h3>
+<p style="text-align: center; color: red; margin: 2px; font-size: 24px; font-weight: bolder">报名已结束</p>
 <form action="${pageContext.request.contextPath}/officer/submit/" method="post" onsubmit="return submitCheck()">
     <label style="width: 100%;">
         <input style="display: none"/><br/>
@@ -146,7 +148,6 @@
             <option value="" disabled selected hidden>第一志愿 *</option>
             <option value="技术部">技术部</option>
             <option value="宣传部">宣传部</option>
-            <option value="电竞部">电竞部</option>
             <option value="策划部">策划部</option>
             <option value="网技部">网技部</option>
         </select>
@@ -154,7 +155,6 @@
             <option value="" disabled selected hidden>第二志愿</option>
             <option value="技术部">技术部</option>
             <option value="宣传部">宣传部</option>
-            <option value="电竞部">电竞部</option>
             <option value="策划部">策划部</option>
             <option value="网技部">网技部</option>
         </select>
@@ -162,7 +162,6 @@
             <option value="" disabled selected hidden>第三志愿</option>
             <option value="技术部">技术部</option>
             <option value="宣传部">宣传部</option>
-            <option value="电竞部">电竞部</option>
             <option value="策划部">策划部</option>
             <option value="网技部">网技部</option>
         </select>

@@ -22,9 +22,9 @@
         <url-pattern>/member/</url-pattern>
         <url-pattern>/member/submit/</url-pattern>
         <url-pattern>/member/lecture/</url-pattern>
-        <url-pattern>/member/lecture/submit/</url-pattern>
+<!--        <url-pattern>/member/lecture/submit/</url-pattern>-->
         <url-pattern>/officer/</url-pattern>
-        <url-pattern>/officer/submit/</url-pattern>
+<!--        <url-pattern>/officer/submit/</url-pattern>-->
         <url-pattern>/officer/search/</url-pattern>
     </servlet-mapping>
     <filter>

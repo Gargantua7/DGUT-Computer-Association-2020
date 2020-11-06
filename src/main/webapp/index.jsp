@@ -29,13 +29,13 @@
             </button>
             <a class="navbar-brand" href="#"><img alt="计协logo" height="20px" src="${pageContext.request.contextPath}/img/jixielogo.jpg"
                                            width="20px"></a>
-            <a class="btn btn-default navbar-btn" href="${pageContext.request.contextPath}/sign/signIn/">报名</a>
+<%--            <a class="btn btn-default navbar-btn" href="${pageContext.request.contextPath}/sign/signIn/">报名</a>--%>
+            <a class="btn btn-default navbar-btn" href="${pageContext.request.contextPath}/member/">报名</a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav">
                 <li><a href="${pageContext.request.contextPath}/#1">技术部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#2">宣传部</a></li>
-                <li><a href="${pageContext.request.contextPath}/#3">电竞部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#4">策划部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#5">网技部</a></li>
                 <li><a href="${pageContext.request.contextPath}/#6">协会定位</a></li>
@@ -85,33 +85,6 @@
             </article>
         </div>
     </div>
-</div>
-<div class="block" style="width:100%;height:600px;">
-    <div class="container-fluid" id="3" style="background-image:url(${pageContext.request.contextPath}/img/1.jpg); background-size:100% 100%;
-            background-position:center;">
-        <!-- 这是第三个背景图style="background:url(图片地址); width:100%;height:600px;" -->
-        <div class="center">
-            <article class="item">
-                <header>
-                    <h3>电竞部</h3>
-                </header>
-                <h4>热爱游戏 团体精神<br/>参与电竞项目</h4>
-                <p>负责举办一些校内的电子竞技赛事和承办一些</p>
-                <p>外部比赛，给大家营造校内的电子竞技氛围</p>
-                <p>让大家感受到电子竞技的魅力</p>
-
-                <!-- 这是第三个图片，把地址放进src就行 -->
-                <!--                    <img src="img/tu2.jpg" height="250px;" width="250px;">-->
-
-
-                <!-- <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" data-content="">
-                    点？？？ -->
-            </article>
-        </div> <!-- <div class="col-md-6"></div> -->
-    </div> <!-- <div class="col-md-6"> -->
-    <!-- <h3></h3>
--->
-    <!--内容模块 -->
 </div>
 <div class="block" style="width:100%;height:600px;">
     <div class="container-fluid" id="4" style="background-image:url(${pageContext.request.contextPath}/img/5.jpg); background-size:100% 100%;
